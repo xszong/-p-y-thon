@@ -1,0 +1,12 @@
+#跳过
+for i in range(10):
+    if i== 2:
+        continue
+    print(i)
+
+#终止
+
+for j in range(10):
+    if j == 2:
+        break
+    print(j)
