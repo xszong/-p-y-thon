@@ -1,0 +1,11 @@
+a = 1
+b = 1
+
+def square_sum(a, b):
+    a = a ** 2
+    b = b ** 2
+    c = a + b
+    return c
+
+result = square_sum(a, b)
+print(result)
