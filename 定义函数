@@ -46,3 +46,39 @@ total_price = price + tax_amount
 rounded_price = round(total_price, 2)
 
 print(rounded_price)
+
+
+cmp(x, y) 是一个在 Python 2 中可用的内置函数，用于比较两个对象 x 和 y 的大小关系。
+
+根据函数的定义，cmp(x, y) 的返回值有三种可能情况：
+
+如果 x 小于 y，则返回 -1。
+如果 x 等于 y，则返回 0。
+如果 x 大于 y，则返回 1。
+这个函数可以用来进行对象的比较并得到比较结果。以下是一个示例：
+
+python
+复制
+result = cmp(3, 5)
+print(result)  # 输出 -1，因为 3 < 5
+
+result = cmp(5, 5)
+print(result)  # 输出 0，因为 5 == 5
+
+result = cmp(7, 5)
+print(result)  # 输出 1，因为 7 > 5
+在 Python 3 中，cmp() 函数已经被废弃，因为引入了更简洁的比较方式。可以使用表达式 (x > y) - (x < y) 来代替。该表达式的结果与 cmp(x, y) 的结果是相同的。
+
+以下是相同的示例，使用 (x > y) - (x < y) 来进行比较：
+
+python
+复制
+result = (3 > 5) - (3 < 5)
+print(result)  # 输出 -1
+
+result = (5 > 5) - (5 < 5)
+print(result)  # 输出 0
+
+result = (7 > 5) - (7 < 5)
+print(result)  # 输出 1
+这样，您可以在 Python 3 中执行相同的比较操作。
